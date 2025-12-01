@@ -1,9 +1,7 @@
 <% layout("/layouts/boilerplate") %>
 <script>
     const mapToken = "<%= mapboxToken %>";
-    const listingGeometry = <%- JSON.stringify(listing.geometry) %>;
-    const listingTitle = "<%= listing.title %>";
-    const listingLocation = "<%= listing.location %>";
+    const listing = <%- JSON.stringify(listing) %>;
 </script>
 <div class="row mt-3">
     <div class="col-8 offset-3  ">
